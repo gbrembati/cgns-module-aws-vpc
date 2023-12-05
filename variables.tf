@@ -19,4 +19,3 @@ variable "subnets_bit_length" {
   type = number
   description = "Number of additional bits with which to extend the vpc cidr. For example, if given a vpc_cidr ending in /16 and a subnets_bit_length value of 4, the resulting subnet address will have length /20."
 }
-

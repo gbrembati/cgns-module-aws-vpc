@@ -41,7 +41,7 @@ resource "aws_subnet" "tgw_subnets" {
   availability_zone = each.key
   cidr_block = cidrsubnet(aws_vpc.vpc.cidr_block, var.subnets_bit_length, each.value)
   tags = {
-    Name = format("tgw subnet %s", each.value)
+    Name = format("TGW subnet %s", each.value)
   }
 }
 
